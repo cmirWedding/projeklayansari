@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Desa Layansari</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <!-- Bagian Header -->
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Selamat Datang di Desa Kami</h1>
+            <p>Desa Layansari di Gandrungmangu, Cilacap, menawarkan suasana pedesaan yang asri dan tenang, dikelilingi
+                oleh hamparan sawah hijau, kebun, dan aliran sungai kecil yang jernih. Alam di Layansari menghadirkan
+                pemandangan yang sejuk dengan pepohonan rindang yang tersebar di berbagai sudut desa. Kehidupan warga
+                yang sederhana, bercocok tanam, dan tradisi gotong royong menambah kehangatan suasana. Ketenangan desa
+                ini menjadi daya tarik tersendiri bagi mereka yang ingin merasakan kedamaian dan kesejukan alam pedesaan
+                khas Jawa Tengah.</p>
+        </div>
+    </header>
+
+    <!-- Bagian Visi Misi -->
+    <section class="visi-misi">
+        <h2>Visi dan Misi</h2>
+        <div class="content">
+            <div class="visi">
+                <h3>Visi</h3>
+                <p>"Mewujudkan Desa Layansari yang maju, sejahtera, dan mandiri. Meningkatkan kualitas hidup masyarakat
+                    melalui pembangunan berkelanjutan.</p>
+            </div>
+            <div class="misi">
+                <h3>Misi</h3>
+                <ul>
+                    <li>Meningkatkan kualitas pendidikan dan pelayanan kesehatan bagi masyarakat.</li>
+                    <li>Mendorong perkembangan ekonomi lokal melalui pemberdayaan usaha mikro, kecil, dan menengah
+                        (UMKM).</li>
+                    <li>Mengoptimalkan infrastruktur desa untuk mendukung aktivitas ekonomi dan sosial.</li>
+                    <li>Menjaga kelestarian lingkungan melalui pengelolaan sumber daya alam yang berkelanjutan.</li>
+                    <li>Meningkatkan partisipasi masyarakat dalam proses pembangunan desa.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Galeri -->
+    <section class="galeri">
+        <h2 class="center-text">Galeri Desa Layansari</h2>
+        <div class="galeri-container">
+            <div class="galeri-item">
+                <img src="img/4.jpg" alt="Pemandangan Alam">
+                <h3>Pesona Alam</h3>
+                <p>Desa kami menawarkan pemandangan hijau yang luas dan bersih.</p>
+            </div>
+            <div class="galeri-item">
+                <img src="img/3.png" alt="Pelayanan Umum ">
+                <h3>Layanan Umum</h3>
+                <p>Desa kami juga menyediakan layanan umum untuk posiandu, pembnuatan KK, pembuatan KTP, Akte, ijin usaha
+                    dan lain sebagainya.</p>
+            </div>
+            <div class="galeri-item">
+                <img src="img/2.png" alt="Pertanian">
+                <h3>Aktivitas Warga</h3>
+                <p>Dengan ladang yang luas dan hasil yang melimpah, Layansari adalah desa tempat petani-petani tangguh
+                    membangun masa depan yang lebih baik.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Peta -->
+    <!-- Bagian Peta -->
+    <section class="maps">
+        <h2 id="mapsTitle">Peta Desa</h2>
+        <button id="tampilkanPeta" onclick="tampilkanPeta()">Tampilkan Peta</button>
+        <button id="tutupPeta" onclick="tutupPeta()" style="display: none;">Tutup Peta</button>
+        <div id="mapContainer" style="display: none;">
+            <!-- Ganti URL dengan URL internal yang sesuai -->
+            <iframe id="mapIframe" src="https://desalayansarimaps.vercel.app/" <!-- URL internal pada domain yang sama
+                -->
+                allowfullscreen=""
+                loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Bagian Footer -->
+    <footer>
+        <p>&copy; 2024 Website Desa Layansari</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
